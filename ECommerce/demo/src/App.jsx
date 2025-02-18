@@ -27,7 +27,6 @@ function App() {
     <Hero handleOrderPopup={handleOrderPopup} />
     <Banner />
       
-    
       
       
     </div>
