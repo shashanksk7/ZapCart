@@ -27,7 +27,7 @@ function App() {
     <Hero handleOrderPopup={handleOrderPopup} />
     <Banner />
       
-      <h1>nvdsnj</h1>
+      
       
     </div>
   );
