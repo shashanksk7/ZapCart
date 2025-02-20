@@ -1,54 +1,129 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import React from "react";
+// import footerLogo from "../../assets/logo.png";
+// import Banner from "../../assets/website/footer-pattern.jpg";
+import { FiShoppingBag } from "react-icons/fi";
+import { FaMapLocationDot } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaLocationArrow,
+  FaMobileAlt,
+} from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+
+// const BannerImg = {
+//   backgroundImage: `url(${Banner})`,
+//   backgroundPosition: "bottom",
+//   backgroundRepeat: "no-repeat",
+//   backgroundSize: "cover",
+//   height: "100%",
+//   width: "100%",
+// };
+
+const FooterLinks = [
+  {
+    title: "Home",
+    link: "/#",
+  },
+  {
+    title: "About",
+    link: "/#about",
+  },
+  {
+    title: "Contact",
+    link: "/#contact",
+  },
+  {
+    title: "Blog",
+    link: "/#blog",
+  },
+];
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Company Info */}
-        <div>
-          <h2 className="text-xl font-semibold mb-3">ElectroMart</h2>
-          <p>Your one-stop shop for the latest electronics and gadgets.</p>
-        </div>
+    <div className="text-white bg-[#212529]">
+      <div className="container">
+        <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
+          {/* company details */}
+          <div className="py-8 px-4">
+            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-1">
+              <FiShoppingBag size="30" />
+              {/* <img src={footerLogo} alt="" className="max-w-[50px]" /> */}
+              ShopMe
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
+              beatae ea recusandae blanditiis veritatis.
+            </p>
+          </div>
 
-        {/* Quick Links */}
-        <div>
-          <h2 className="text-xl font-semibold mb-3">Quick Links</h2>
-          <ul>
-            <li><a href="#" className="hover:text-gray-400">Home</a></li>
-            <li><a href="#" className="hover:text-gray-400">About Us</a></li>
-            <li><a href="#" className="hover:text-gray-400">Contact</a></li>
-            <li><a href="#" className="hover:text-gray-400">Support</a></li>
-          </ul>
-        </div>
+          {/* Footer Links */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                  Important Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  {FooterLinks.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      key={link.title}
+                    >
+                      <span>{link.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div className="py-8 px-4">
+                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                  Links
+                </h1>
+                <ul className="flex flex-col gap-3">
+                  {FooterLinks.map((link) => (
+                    <li
+                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      key={link.title}
+                    >
+                      <span>{link.title}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
 
-        {/* Product Categories */}
-        <div>
-          <h2 className="text-xl font-semibold mb-3">Categories</h2>
-          <ul>
-            <li><a href="#" className="hover:text-gray-400">Smartphones</a></li>
-            <li><a href="#" className="hover:text-gray-400">Laptops</a></li>
-            <li><a href="#" className="hover:text-gray-400">Gaming</a></li>
-            <li><a href="#" className="hover:text-gray-400">Accessories</a></li>
-          </ul>
-        </div>
+            {/* social links */}
 
-        {/* Social Media */}
-        <div>
-          <h2 className="text-xl font-semibold mb-3">Follow Us</h2>
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-blue-500"><FaFacebook size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-pink-500"><FaInstagram size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-blue-400"><FaTwitter size={24} /></a>
-            <a href="#" className="text-gray-400 hover:text-red-500"><FaYoutube size={24} /></a>
+            <div>
+              <div className="flex items-center gap-3 mt-6">
+                <a href="#">
+                  <FaInstagram className="text-3xl" />
+                </a>
+                <a href="#">
+                  <FaFacebook className="text-3xl" />
+                </a>
+                <a href="#">
+                  <FaLinkedin className="text-3xl" />
+                </a>
+              </div>
+              <div className="mt-6">
+                <div className="flex items-center gap-3">
+                  <FaMapLocationDot />
+                  <p>Bhopal MP</p>
+                </div>
+                <div className="flex items-center gap-3 mt-3">
+                  <IoCall />
+                  <p>+919608631007</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Copyright Section */}
-      <div className="text-center text-gray-500 text-sm mt-6 border-t border-gray-700 pt-4">
-        &copy; {new Date().getFullYear()} ElectroMart. All rights reserved.
-      </div>
-    </footer>
+    </div>
   );
 };
 
