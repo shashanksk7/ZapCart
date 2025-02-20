@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Banner from "./components/Banner/Banner.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx"
+import Footer from "./components/footer/footer.jsx";
 
 function App() {
   const [orderPopup, setOrderPopup] = useState(false); // ✅ Fixed useState syntax
@@ -26,6 +27,7 @@ function App() {
     <Navbar handleOrderPopup={handleOrderPopup} />
     <Hero handleOrderPopup={handleOrderPopup} />
     <Banner />
+    <Footer />
       
       
       

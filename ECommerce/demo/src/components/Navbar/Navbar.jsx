@@ -19,17 +19,17 @@ const Menu = [
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: " Lights",
     link: "/#",
   },
   {
     id: 3,
-    name: "Mens Wear",
+    name: "Smartphone",
     link: "/#",
   },
   {
     id: 3,
-    name: "Electronics",
+    name: "Laptop",
     link: "/#",
   },
 ];
