@@ -1,28 +1,28 @@
 import React from "react";
-import Img1 from "../../assets/shirt/shirt.png";
-import Img2 from "../../assets/shirt/shirt2.png";
-import Img3 from "../../assets/shirt/shirt3.png";
+import Img1 from "../../assets/highproduct/home-removebg-preview.png";
+import Img2 from "../../assets/highproduct/laptopp.png";
+import Img3 from "../../assets/highproduct/img1-r.png";
 import { FaStar } from "react-icons/fa";
 
 const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Casual Wear",
+    title: "Home & Appliance",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
     img: Img2,
-    title: "Printed shirt",
+    title: "Laptops",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
     img: Img3,
-    title: "Women shirt",
+    title: "Phones",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -52,11 +52,11 @@ const TopProducts = ({ handleOrderPopup }) => {
               className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]"
             >
               {/* image section */}
-              <div className="h-[100px]">
+              <div className="h-[90px]">
                 <img
                   src={data.img}
                   alt=""
-                  className="max-w-[140px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md"
+                  className="max-w-[200px] block mx-auto transform -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md"
                 />
               </div>
               {/* details section */}

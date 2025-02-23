@@ -10,6 +10,7 @@ import TopProducts from "./components/TopProducts/TopProducts.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Subscribe from "./components/Subscribe/Subscribe.jsx"
+//import LoginSignup from "./components/LoginandSignup/Login.jsx";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
     <Navbar handleOrderPopup={handleOrderPopup} />
+    {/* <LoginSignup/> */}
     <Hero handleOrderPopup={handleOrderPopup} />
     <Products />
     <TopProducts handleOrderPopup={handleOrderPopup} />
@@ -38,11 +40,7 @@ function App() {
     <Subscribe />
     <Testimonials />
     <Footer />
-    <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
-      
-    
-      
-      
+    <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} /> 
     </div>
   );
 }

@@ -1,17 +1,18 @@
 import React from "react";
-import Img1 from "../../assets/women/women.png";
-import Img2 from "../../assets/women/women2.jpg";
-import Img3 from "../../assets/women/women3.jpg";
-import Img4 from "../../assets/women/women4.jpg";
+import Img1 from "../../assets/women/lcd.webp";
+import Img2 from "../../assets/women/mixi.jpeg";
+import Img3 from "../../assets/women/phone.jpeg";
+import Img4 from "../../assets/women/laptop.jpeg";
+import Img5 from "../../assets/women/download.jpeg";
 import { FaStar } from "react-icons/fa6";
 
 const ProductsData = [
   {
     id: 1,
     img: Img1,
-    title: "Women Ethnic",
+    title: "Lcd 32 inch",
     rating: 5.0,
-    color: "white",
+    color: "Black",
     aosDelay: "0",
   },
   {
@@ -40,7 +41,7 @@ const ProductsData = [
   },
   {
     id: 5,
-    img: Img2,
+    img: Img5,
     title: "Fashin T-Shirt",
     rating: 4.5,
     color: "Pink",

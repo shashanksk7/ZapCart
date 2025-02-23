@@ -5,6 +5,8 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 import { FiShoppingBag } from "react-icons/fi";
+import { BiSolidUserCircle } from "react-icons/bi";
+
 
 const Menu = [
   {
@@ -19,12 +21,12 @@ const Menu = [
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: "Mobiles",
     link: "/#",
   },
   {
     id: 3,
-    name: "Mens Wear",
+    name: "Laptops",
     link: "/#",
   },
   {
@@ -61,7 +63,7 @@ const Navbar = ({ handleOrderPopup }) => {
           <div>
             <a href="#" className="font-bold text-xl items-center flex gap-1">
               <FiShoppingBag size="30" />
-              ShopMe
+              ZebCart
             </a>
           </div>
 
@@ -86,12 +88,25 @@ const Navbar = ({ handleOrderPopup }) => {
                 Order
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
+              
             </button>
+            
 
             {/* Darkmode Switch */}
             <div>
               <DarkMode />
             </div>
+            <div className="flex items-center space-x-4">
+      {/* Login/Signup Icon */}
+      <a
+        href="/ECommerce/demo/src/components/LoginandSignup/Login.jsx"
+        className="flex items-center text-gray-700 hover:text-yellow-500 transition duration-300"
+        title="Login / Signup"
+      >
+        <BiSolidUserCircle className="text-4xl" />
+        <span className="ml-2 font-bold hidden md:inline">Login / Signup</span>
+      </a>
+    </div>
           </div>
         </div>
       </div>
